@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  PhotoFromVideo
+
+  Created by mike majid on 2013-11-17.
+  Copyright (c) 2013 mike majid. All rights reserved.
+*/
+
+/** General **/
+"Ok" = "Ok";
+"Cancel" = "Cancel";
+
+"Groups" = "Groups";
+"Camera" = "Camera";
+"Camera not supported" = "Camera not supported";
+
+/** CEditShareImageViewController **/
+"Picture" = "Picture";
+
+/** CShareImageViewController **/
+"Share picture" = "Share picture";
+"Successfully saved to Camera roll" = "Successfully saved to Camera roll";
+"Unable to save to Camera roll" = "Unable to save to Camera roll";
+"My Picture" = "My Picture";
+"Check out this picture !" = "Check out this picture !";
+"Created using: " = "Created using: ";
+"Unable to send email" = "Unable to send email";
+"Unable to send iMessage" = "Unable to send iMessage";
+
+/** CSelectAssetSetFromGroupViewController **/
+"Select" = "Select";
+
+/** CExtractImageFromVideoViewController **/
+"Video" = "Video";
+"Set time cursor to:" = "Set time cursor to:";
