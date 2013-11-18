@@ -7,7 +7,7 @@
 //
 
 #import "CAssetImageView.h"
-#import "GraphicsUtilities.h"
+#import "UIImageView+UIImageView_getImageViewFromFile.h"
 
 #import "GlobalDebug.h"
 #ifdef GLOBAL_DEBUG
@@ -28,7 +28,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        assetSelectedOverlayImageView = [GraphicsUtilities getImageViewFromFile:@"AssetSelectedOverlay.png" x:0 y:0];
+        assetSelectedOverlayImageView = [UIImageView GetImageViewFromFile:@"AssetSelectedOverlay.png"];
         assetSelectedOverlayImageView.userInteractionEnabled = false;
         
         int x = 0;
@@ -59,7 +59,7 @@
         int cx = 4;
         int cy = 4;
         CGRect cameraIconImageViewFrame = CGRectMake(cx, cy, cameraIconWidth, cameraIconHeight);
-        UIImageView* cameraIconImageView = [GraphicsUtilities getImageViewFromFile:@"CameraIcon.png" x:0 y:0];
+        UIImageView* cameraIconImageView = [UIImageView GetImageViewFromFile:@"CameraIcon.png"];
         cameraIconImageView.frame = cameraIconImageViewFrame;
         [videoDurationPanelView addSubview:cameraIconImageView];
         

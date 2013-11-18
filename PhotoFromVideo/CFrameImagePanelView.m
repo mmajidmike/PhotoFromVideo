@@ -7,7 +7,6 @@
 //
 
 #import "CFrameImagePanelView.h"
-#import "GraphicsUtilities.h"
 #import <AVFoundation/AVAssetImageGenerator.h>
 #import <QuartzCore/QuartzCore.h>
 

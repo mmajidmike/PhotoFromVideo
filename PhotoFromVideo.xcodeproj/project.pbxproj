@@ -33,7 +33,6 @@
 		E61C6294182BF3B500F355AF /* CALAssetsLibraryContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C6293182BF3B500F355AF /* CALAssetsLibraryContainer.m */; };
 		E61C6297182BF3FB00F355AF /* CAssetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C6296182BF3FB00F355AF /* CAssetTableViewCell.m */; };
 		E61C629A182BF42700F355AF /* PRP3BtnAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C6299182BF42700F355AF /* PRP3BtnAlertView.m */; };
-		E61C629D182BF4C000F355AF /* GraphicsUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C629C182BF4C000F355AF /* GraphicsUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E61C62A2182BF86400F355AF /* AssetSelectedOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C629E182BF86400F355AF /* AssetSelectedOverlay.png */; };
 		E61C62A4182BF86400F355AF /* CameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C62A0182BF86400F355AF /* CameraIcon.png */; };
 		E61C62A7182BF8DD00F355AF /* AssetSelectedOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C62A6182BF8DD00F355AF /* AssetSelectedOverlay@2x.png */; };
@@ -44,6 +43,8 @@
 		E61C62C5182C8BED00F355AF /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C62C1182C8BED00F355AF /* PauseButton.png */; };
 		E61C62C8182C8C0700F355AF /* PlayButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C62C7182C8C0700F355AF /* PlayButton@2x.png */; };
 		E61C62CA182C8C1200F355AF /* PauseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E61C62C9182C8C1200F355AF /* PauseButton@2x.png */; };
+		E62107EF183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E62107EC183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.m */; };
+		E62107F0183AA6A700DA4636 /* UIImage+UIImage_getImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E62107EE183AA6A700DA4636 /* UIImage+UIImage_getImage.m */; };
 		E62A4788182D2C8E00775279 /* CVideoFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E62A4787182D2C8E00775279 /* CVideoFrameView.m */; };
 		E62A478D182D32C400775279 /* cursorVideoFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = E62A478B182D32C400775279 /* cursorVideoFrame.png */; };
 		E62A478E182D32C400775279 /* videoFrameScrollView.png in Resources */ = {isa = PBXBuildFile; fileRef = E62A478C182D32C400775279 /* videoFrameScrollView.png */; };
@@ -452,8 +453,6 @@
 		E61C6296182BF3FB00F355AF /* CAssetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAssetTableViewCell.m; sourceTree = "<group>"; };
 		E61C6298182BF42700F355AF /* PRP3BtnAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRP3BtnAlertView.h; sourceTree = "<group>"; };
 		E61C6299182BF42700F355AF /* PRP3BtnAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRP3BtnAlertView.m; sourceTree = "<group>"; };
-		E61C629B182BF4C000F355AF /* GraphicsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsUtilities.h; sourceTree = "<group>"; };
-		E61C629C182BF4C000F355AF /* GraphicsUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsUtilities.m; sourceTree = "<group>"; };
 		E61C629E182BF86400F355AF /* AssetSelectedOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AssetSelectedOverlay.png; sourceTree = "<group>"; };
 		E61C62A0182BF86400F355AF /* CameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraIcon.png; sourceTree = "<group>"; };
 		E61C62A6182BF8DD00F355AF /* AssetSelectedOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetSelectedOverlay@2x.png"; sourceTree = "<group>"; };
@@ -466,6 +465,10 @@
 		E61C62C1182C8BED00F355AF /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButton.png; sourceTree = "<group>"; };
 		E61C62C7182C8C0700F355AF /* PlayButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButton@2x.png"; sourceTree = "<group>"; };
 		E61C62C9182C8C1200F355AF /* PauseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PauseButton@2x.png"; sourceTree = "<group>"; };
+		E62107EB183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIImageView_getImageViewFromFile.h"; sourceTree = "<group>"; };
+		E62107EC183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIImageView_getImageViewFromFile.m"; sourceTree = "<group>"; };
+		E62107ED183AA6A700DA4636 /* UIImage+UIImage_getImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_getImage.h"; sourceTree = "<group>"; };
+		E62107EE183AA6A700DA4636 /* UIImage+UIImage_getImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_getImage.m"; sourceTree = "<group>"; };
 		E62A4786182D2C8E00775279 /* CVideoFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVideoFrameView.h; sourceTree = "<group>"; };
 		E62A4787182D2C8E00775279 /* CVideoFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVideoFrameView.m; sourceTree = "<group>"; };
 		E62A478B182D32C400775279 /* cursorVideoFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cursorVideoFrame.png; sourceTree = "<group>"; };
@@ -672,8 +675,6 @@
 				E61C6293182BF3B500F355AF /* CALAssetsLibraryContainer.m */,
 				E61C6298182BF42700F355AF /* PRP3BtnAlertView.h */,
 				E61C6299182BF42700F355AF /* PRP3BtnAlertView.m */,
-				E61C629B182BF4C000F355AF /* GraphicsUtilities.h */,
-				E61C629C182BF4C000F355AF /* GraphicsUtilities.m */,
 				E61C62AE182C2AEF00F355AF /* extractImageFromVideo */,
 			);
 			name = "select image from camera roll";
@@ -694,6 +695,17 @@
 				E67D2326182D6AFD009A19F9 /* CTimeButtonTextField.m */,
 			);
 			name = extractImageFromVideo;
+			sourceTree = "<group>";
+		};
+		E62107C0183AA66B00DA4636 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E62107EB183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.h */,
+				E62107EC183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.m */,
+				E62107ED183AA6A700DA4636 /* UIImage+UIImage_getImage.h */,
+				E62107EE183AA6A700DA4636 /* UIImage+UIImage_getImage.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		E63E98AD1831742B00AC262A /* server access */ = {
@@ -815,6 +827,7 @@
 				E61C6289182BF32C00F355AF /* CSelectNewVideoElementSetViewController.h */,
 				E61C628A182BF32C00F355AF /* CSelectNewVideoElementSetViewController.m */,
 				E67A3D56182BD66000A19500 /* Images.xcassets */,
+				E62107C0183AA66B00DA4636 /* Categories */,
 				E63E98B11831747000AC262A /* Third Party */,
 				E63E98AD1831742B00AC262A /* server access */,
 				E69FCF95182E6A1800EB850C /* edit and share image */,
@@ -1349,6 +1362,7 @@
 				E63E98D1183174D400AC262A /* ASINetworkQueue.m in Sources */,
 				E62A4788182D2C8E00775279 /* CVideoFrameView.m in Sources */,
 				E61C6294182BF3B500F355AF /* CALAssetsLibraryContainer.m in Sources */,
+				E62107F0183AA6A700DA4636 /* UIImage+UIImage_getImage.m in Sources */,
 				E61C62B6182C396800F355AF /* CPlayerView.m in Sources */,
 				E61C628F182BF32C00F355AF /* CSelectNewVideoElementSetViewController.m in Sources */,
 				E67A3D4C182BD66000A19500 /* AppDelegate.m in Sources */,
@@ -1357,7 +1371,6 @@
 				E63E98901831643500AC262A /* CShareImageViewController.m in Sources */,
 				E63E98B5183174B000AC262A /* Reachability.m in Sources */,
 				E61C6290182BF32C00F355AF /* CSelectAssetSetFromGroupViewController.m in Sources */,
-				E61C629D182BF4C000F355AF /* GraphicsUtilities.m in Sources */,
 				E63E98D0183174D400AC262A /* ASIInputStream.m in Sources */,
 				E67D2327182D6AFD009A19F9 /* CTimeButtonTextField.m in Sources */,
 				E61C62B1182C2D8F00F355AF /* CExtractImageFromVideoViewController.m in Sources */,
@@ -1369,6 +1382,7 @@
 				E63E98CA183174D400AC262A /* ASIAuthenticationDialog.m in Sources */,
 				E63E98CC183174D400AC262A /* ASIDataDecompressor.m in Sources */,
 				E60B4F0E1836B8930077C3C2 /* MySHKConfigurator.m in Sources */,
+				E62107EF183AA6A700DA4636 /* UIImageView+UIImageView_getImageViewFromFile.m in Sources */,
 				E61C6297182BF3FB00F355AF /* CAssetTableViewCell.m in Sources */,
 				E67A3D48182BD66000A19500 /* main.m in Sources */,
 			);

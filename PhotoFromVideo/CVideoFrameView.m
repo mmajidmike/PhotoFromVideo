@@ -1,13 +1,14 @@
 //
 //  CVideoFrameView.m
-//  VideoEdit
+//  VideoEdit.
 //
 //  Created by mike majid on 2013-08-06.
 //  Copyright (c) 2013 mike majid. All rights reserved.
 //
 
 #import "CVideoFrameView.h"
-#import "GraphicsUtilities.h"
+#import "UIImage+UIImage_getImage.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 #import "GlobalDebug.h"
@@ -122,7 +123,7 @@
     // scroll view frame
     double wScale = 1.0;
     double panelInsets = FRAME_PANEL_VIEW_LEFT_INSET + FRAME_PANEL_VIEW_RIGHT_INSET;
-    UIImage* videoFrameScrollViewImage = [[GraphicsUtilities getImage:@"videoFrameScrollView.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    UIImage* videoFrameScrollViewImage = [[UIImage GetImageFromFile:@"videoFrameScrollView.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
     CGRect frameImageViewFrame = subViewPanelFrame;
     double fullFrameWidth = subViewPanelFrame.size.width - panelInsets*wScale;
     double frameImageViewWidth = fullFrameWidth*(rateScaledDuration/rateScaledDurationNoOffsets);
@@ -169,7 +170,7 @@
     cursorImageViewFrame.size.width = VIDEO_FRAME_VIEW_CURSOR_WIDTH;
     cursorImageViewFrame.origin.x = cursorX;
     cursorImageViewFrame.origin.y = 0; // (frame.size.height - cursorImageViewFrame.size.height)/2.0; // 0;
-    UIImage* cursorImage = [GraphicsUtilities getImage:@"cursorVideoFrame.png"];
+    UIImage* cursorImage = [UIImage GetImageFromFile:@"cursorVideoFrame.png"];
     PRLog(@"cursorImageViewFrame=(%g,%g,%g,%g)",cursorImageViewFrame.origin.x, cursorImageViewFrame.origin.y, cursorImageViewFrame.size.width, cursorImageViewFrame.size.height);
     self.cursorImageView = [[UIImageView alloc] initWithFrame:cursorImageViewFrame];
     self.cursorImageView.image = cursorImage;
@@ -439,9 +440,9 @@
 - (void) switchToImageHasBeenEditedImage;
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIImage* videoFrameScrollViewImage = [[GraphicsUtilities getImage:@"editedVideoFrameScrollView.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+        UIImage* videoFrameScrollViewImage = [[UIImage GetImageFromFile:@"editedVideoFrameScrollView.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
         self.frameBorderImageView.image = videoFrameScrollViewImage;
-        UIImage* cursorImage = [GraphicsUtilities getImage:@"editedCursorVideoFrame.png"];
+        UIImage* cursorImage = [UIImage GetImageFromFile:@"editedCursorVideoFrame.png"];
         self.cursorImageView.image = cursorImage;
     });
 }

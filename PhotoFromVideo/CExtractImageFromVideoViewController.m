@@ -7,7 +7,7 @@
 //
 
 #import "CExtractImageFromVideoViewController.h"
-#import "GraphicsUtilities.h"
+#import "UIImage+UIImage_getImage.h"
 #import "CFrameImagePanelView.h"
 #import "PRP3BtnAlertView.h"
 #import "CEditShareImageViewController.h"
@@ -136,8 +136,8 @@
 - (void) setPlayButtonImage;
 {
     UIImage* playButtonImage;
-    if (self.playerView.isPlaying) playButtonImage = [GraphicsUtilities getImage:@"PauseButton.png"];
-    else playButtonImage = [GraphicsUtilities getImage:@"PlayButton.png"];
+    if (self.playerView.isPlaying) playButtonImage = [UIImage GetImageFromFile:@"PauseButton.png"];
+    else playButtonImage = [UIImage GetImageFromFile:@"PlayButton.png"];
     [self.playButton setImage:playButtonImage forState:UIControlStateNormal];
 }
 
